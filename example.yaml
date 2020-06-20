@@ -1,0 +1,20 @@
+#comments in yaml
+# - is a lists
+#booleans true,false |  on,off 
+Info_Object:
+
+  - app: "user-authentication"
+    port: 
+    - 9000
+    - 8000
+    version: 1.7
+    deployed: true
+    oAuth: false
+
+
+  - app: "user-image-processing"
+    port: 9002
+    version: 1.7
+    deployed: false
+    oAuth: false  
+
