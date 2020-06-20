@@ -30,3 +30,9 @@ command:
   - >-
     mysql -h 127.0.0.1 -u root -p$MYSQL_ROOT_PASSWORD -e 'SELECT 1'
 
+
+---
+second: |
+  this is the second yaml file
+  hey this is by three dashes
+#placeholders  
