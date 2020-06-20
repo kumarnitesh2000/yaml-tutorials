@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Pod
+#metadata is the object
+metadata:
+  name: nginx
+  #now labels is the object
+  label:
+    app: nginx
+    author: Nitesh
+#spec is the object
+spec:
+  containers:
+  #containers is the list of the objects
+  - name: nginx-container
+  image:  nginx
+  ports:
+  - containerPort: 80
+  volumeMounts:
+  - name: nginx-vol
+    mountPath: /usr/nginx/html
+    

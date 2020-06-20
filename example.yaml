@@ -17,4 +17,16 @@ Info_Object:
     version: 1.7
     deployed: false
     oAuth: false  
+#for multiple line string
+multiLineString: |
+  this is a multi line string 
+  and now continue with the next
+  line etc .
+
+#now executing the shell command 
+command:
+  - /bin/sh
+  - -ec
+  - >-
+    mysql -h 127.0.0.1 -u root -p$MYSQL_ROOT_PASSWORD -e 'SELECT 1'
 
